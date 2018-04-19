@@ -31,17 +31,18 @@ areac2 a = (areac b)
 
 
 
-cord x y =  if x>1
-				then if y>1
-						then "primeiro quadrante"
-						else "fon"
-				
-			else if x<1
-				then if y<1
-						then "terceiro quadrante"
-						else "fon"
-			
+cord x y =  if x>0
+			then if y>0
+				    then "primeiro quadrante"
+				    else "fon"				
+			else if x<0
+				 then if y<0
+				             then "terceiro quadrante"
+				             else "fon"
+				 else "fon"
+			 
 -- i
+
 intervalo a b x = if a<= b
 						then if x >=  a && x <= b
  						then "esta no intervalo"
